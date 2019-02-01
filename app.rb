@@ -19,7 +19,7 @@ class App < Sinatra::Base
     @result = []
     until @counter == @number
       @counter += 1
-      "#{@phrase}"
+      @result << @phrase
     end
   end
 
