@@ -17,11 +17,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @total = []
     @counter = 0
-    until @counter = 3
-      @counter += 1
-      @total << @phrase
-    end
-    "#{@total}"
+    binding.pry
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
