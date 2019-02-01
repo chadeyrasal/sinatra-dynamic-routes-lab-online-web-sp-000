@@ -21,6 +21,7 @@ class App < Sinatra::Base
       @counter += 1
       @total << @phrase
     end
+    binding.pry
     "#{@total.join(" ")}"
   end
 
