@@ -19,7 +19,7 @@ class App < Sinatra::Base
     @counter = 0
     until @counter = 3
       @counter += 1
-      @total + @phrase
+      @total << @phrase
     end
     "#{@total}"
   end
