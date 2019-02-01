@@ -20,6 +20,7 @@ class App < Sinatra::Base
     until @counter == @number
       @counter += 1
       @result << @phrase
+      @result
     end
   end
 
