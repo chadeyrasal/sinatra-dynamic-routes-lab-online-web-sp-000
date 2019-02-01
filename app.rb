@@ -34,9 +34,7 @@ class App < Sinatra::Base
     elsif @operation == "substract"
     elsif @operation == "multiply"
     elsif @operation == "divide"
-
-
-
+    end
   end
 
 end
