@@ -20,9 +20,8 @@ class App < Sinatra::Base
     until @counter = 3
       @counter += 1
       @total << @phrase
-      @total.join
     end
-    "#{@total}"
+    "#{@total.join}"
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
