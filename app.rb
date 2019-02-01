@@ -20,6 +20,7 @@ class App < Sinatra::Base
     until @counter = 3
       @counter += 1
       @total << @phrase
+      @total.join
     end
     "#{@total}"
   end
