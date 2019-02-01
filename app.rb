@@ -15,7 +15,7 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @phrase = params[:phrase]
-    @total = ""
+    @total = []
     @counter = 0
     until @counter = 3
       @counter += 1
